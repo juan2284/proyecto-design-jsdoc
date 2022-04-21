@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #4d4e53;
+  line-height: 1.5;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.navbar{
+  position: fixed;
+  width: 25%;
+  margin-top: 0;
+  border-right: 3px solid rgba(0, 22, 22, 0.4);
+}
+
+.main-doc{
+  position: absolute;
+  left: 28%;
+}
+
+.navbar header{
+  text-align: center;
+  font-size: 2em;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1160px) {
+  .navbar header{
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .navbar header{
+    font-size: 2em;
+  }
+}
+
+.navbar .links{
+  height: 89.5vh;
+  overflow-y: scroll;
+}
+
+@media only screen and (max-width: 780px) {
+
+  body{
+    line-height: 1;
+  }
+
+  .navbar{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  .navbar .links{
+    border: 1px solid;
+    height: 207px;
+  }
+
+  .main-doc{
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+    left: 0;
+  }
+}
+
+.navbar a .link{
+  border-top: 1px solid black;
+  padding: 15px 25px;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: #4d4e53;
+}
+
+.main-section{
+  width: 96%;
+}
+
+.main-section .title{
+  font-size: 1.7em;
+  margin-top: 20px;
+}
+
+.main-section .mini-title{
+  font-size: 1.3em;
+  margin-top: 15px;
+}
+
+.main-section .text{
+  font-size: .9em;
+  padding: 8px 15px;
+}
+
+.main-section .examples{
+  font-size: .9em;
+  margin-left: 50px;
+}
+
+.main-section .examples_2{
+  margin-left: 20px;
+}
+
+.main-section .codigo{
+  display: block;
+  text-align: left;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.main-section button{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: yellow;
+}
+
+.main-section button a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-section button:hover{
+  background-color: Orange;
+  transition: ease 1s;
+  -webkit-transition: ease 1s;
+  -moz-transition: ease 1s;
+  -ms-transition: ease 1s;
+  -o-transition: ease 1s;
+}
